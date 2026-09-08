@@ -1,2 +1,2 @@
 # NETWORKWALKS-B083F-WK1-PM1-CYBERSECURITY-LAB-SETUP
-Setup Of Virtual Labs For Pentesting
+Self Contained Pentesting Sandbox
