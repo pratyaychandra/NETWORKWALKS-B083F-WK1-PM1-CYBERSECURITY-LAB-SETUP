@@ -1,2 +1,2 @@
 # NETWORKWALKS-B083F-WK1-PM1-CYBERSECURITY-LAB-SETUP
-Setups Of Virtual Labs For Pentesting
+Setup Of Virtual Labs For Pentesting
