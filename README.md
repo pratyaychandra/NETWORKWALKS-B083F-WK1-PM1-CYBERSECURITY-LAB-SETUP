@@ -27,9 +27,9 @@
 
 ## 🎯 Overview
 
-This isn't just a "VM installed" screenshot dump — it's a documented build of an **isolated cyber range**: a private network where an attacker machine (Kali) can be safely used to practice reconnaissance, scanning, and exploitation techniques without ever touching the outside world unintentionally.
+This isn't just a "VM installed" screenshot dump, it's a documented build of an **SANDBOXED ENVIRONMENT**: a private network where an attacker machine (Kali) can be safely used to practice reconnaissance, scanning and exploitation techniques without ever touching the outside world unintentionally.
 
-> ⚠️ **Ethics Notice:** This lab is strictly for authorized, personal, and educational use. No tools here were used against systems I don't own or have permission to test.
+> ⚠️ **Ethics Notice:** This lab is strictly for authorized, personal and educational use. No tools here were used against systems I don't own or have permission to test.
 
 ---
 
@@ -55,11 +55,11 @@ Any future VM can be added into the same `10.0.0.0/24` range.
 
 | Layer | Detail |
 |---|---|
-| 🖥️ Host OS | Windows 10/11 |
+| 🖥️ Host OS | Windows 11 |
 | 🧰 Hypervisor | VirtualBox 7.2 |
 | 🐉 Guest OS | Kali Linux 2026.2 |
-| 🧠 Allocated RAM | 2048 MB |
-| 🌐 Network Mode | NAT Network (isolated, internet-capable) |
+| 🧠 Allocated RAM | 4096 MB |
+| 🌐 Network Mode | NAT Network (isolated and internet capable) |
 | 📡 Subnet | `10.0.0.0/24` |
 | 🐧 Kali Static IP | `10.0.0.2/24` |
 | 🚪 Gateway | `10.0.0.1` |
