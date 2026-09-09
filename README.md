@@ -207,6 +207,4 @@ sudo nmcli connection up "Ethernet1"
 
 Built and documented by **Pratyay Chandra**.
 
-Connect: [LinkedIn](#) • [GitHub](#)
-
 </div>
