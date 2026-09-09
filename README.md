@@ -99,7 +99,7 @@ Installed 7-Zip for archive extraction and VirtualBox 7.2 as the hypervisor.
 <details>
 <summary><b>Step 2 - Isolated NAT Network</b></summary>
 
-Created a dedicated NAT Network instead of default NAT — this allows multiple future VMs to talk to each other *and* reach the internet.
+Created a dedicated NAT Network instead of default NAT - this allows multiple future VMs to talk to each other *and* reach the internet.
 
 ```
 Name:        NatNetwork
@@ -139,7 +139,7 @@ DNS:         8.8.8.8
 <details>
 <summary><b>Step 5 - Shared Folder & Clipboard</b></summary>
 
-Enabled bidirectional clipboard, drag-and-drop, and mapped host `/Downloads` as a permanent shared folder.
+Enabled bidirectional clipboard, drag-and-drop and mapped host `/Downloads` as a permanent shared folder.
 
 ![Shared Folder](docs/screenshots/05-shared-folder.png)
 
@@ -199,7 +199,7 @@ sudo nmcli connection up "Ethernet1"
 | [7-Zip](https://www.7-zip.org/) | Archive extraction |
 | [VirtualBox 7.2](https://virtualbox.org) | Hypervisor / virtualization layer |
 | [Kali Linux 2026.2](https://kali.org/get-kali) | Attacker OS / pentesting distro |
-| nmcli | Network interface management |
+| nmcli | Network Interface Management |
 
 ---
 
