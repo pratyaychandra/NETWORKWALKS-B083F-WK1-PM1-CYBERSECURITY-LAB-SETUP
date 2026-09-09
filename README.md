@@ -136,11 +136,11 @@ Took a clean snapshot (`Clean-Kali-NetworkSetup`) as a recovery checkpoint befor
 
 | Test | Command | Result |
 |---|---|---|
-| Interface & IP | `ip a` | ✅ `10.0.0.2/24` confirmed |
-| Gateway reachability | `ping 10.0.0.1` | ✅ Replies received |
-| Internet reachability | `ping 8.8.8.8` | ✅ Replies received |
+| Interface & IP | `ip a show eth0` | ✅ `10.0.0.2/24` confirmed |
+| Gateway reachability | `ping -c 2 10.0.0.1` | ✅ Replies received |
+| Internet reachability | `ping-c 2 8.8.8.8` | ✅ Replies received |
 | DNS resolution | `nslookup networkwalks.com` | ✅ Resolved |
-| Tooling check | `nmap --version` | ✅ Installed & functional |
+
 
 ![Connectivity Test](docs/screenshots/05-connectivity-test.png)
 
