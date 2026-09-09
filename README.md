@@ -36,7 +36,7 @@ This isn't just a "VM installed" screenshot dump, it's a documented build of an 
 
 ```mermaid
 graph TD
-    A[Host Machine<br/>Windows 10/11] --> B[VirtualBox Hypervisor v7.2]
+    A[Host Machine<br/>Windows 11] --> B[VirtualBox Hypervisor v7.2]
     B --> C[NAT Network: NatNetwork<br/>10.0.0.0/24]
     C --> D[Kali Linux 2026.2<br/>10.0.0.2/24 - Attacker]
     C -.future.-> E[Target VM Slot<br/>10.0.0.3 - 99]
