@@ -98,7 +98,7 @@ IPv6:        Disabled
 Downloaded Kali Linux 2026.2 (official VirtualBox image) and attached it to `NatNetwork`.
 
 ![Kali VM Adapter](docs/screenshots/02-kali-vm-adapter.png)
-![Kali Desktop](docs/screenshots/03-kali-desktop.png)
+![Kali Desktop](docs/screenshots/03-kali-info.png)
 </details>
 
 <details>
@@ -166,15 +166,6 @@ sudo nmcli connection up "Wired connection 1"
 - **NAT vs. NAT Network** — a NAT Network lets multiple VMs cross-communicate *and* reach the internet, unlike standard per-VM NAT. Essential for multi-machine labs.
 - Static IP + documented subnet ranges make future target VMs trivial to add.
 - Snapshots aren't optional — they're the "undo button" for a lab you're about to break on purpose.
-
----
-
-## 🔭 Roadmap
-
-- [ ] Add Metasploitable2 as a vulnerable target (`10.0.0.5`)
-- [ ] Add Windows 10 target VM (`10.0.0.10`)
-- [ ] Run first Nmap scan across the subnet
-- [ ] Document first exploitation walkthrough
 
 ---
 
