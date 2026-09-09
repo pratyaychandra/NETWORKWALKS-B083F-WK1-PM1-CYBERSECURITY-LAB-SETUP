@@ -1,6 +1,6 @@
 <div align="center">
 
-# Kali Linux Lab Setup
+# Sandboxed Lab Setup
 
 **A Self-Contained Isolated Pentesting Sandbox Built From Scratch On VirtualBox.**
 
@@ -23,7 +23,7 @@
 - [Troubleshooting Journal](#troubleshooting-journal)
 - [Key Takeaways](#key-takeaways)
 - [Arsenal](#arsenal)
-- [Operator](#operator)
+- [Creator](#creator)
 
 ---
 
@@ -77,12 +77,12 @@ Any future VM can be added into the same `10.0.0.0/24` range without touching th
 | Hypervisor | VirtualBox 7.2 |
 | Guest OS | Kali Linux 2026.2 |
 | Allocated RAM | 4096 MB |
-| Network Mode | NAT Network (isolated, internet-capable) |
+| Network Mode | NAT Network (Isolated and Internet-capable) |
 | Subnet | `10.0.0.0/24` |
 | Kali Static IP | `10.0.0.2/24` |
 | Gateway | `10.0.0.1` |
 | DNS | `8.8.8.8` |
-| Shared Folder | Host `/Downloads` → Kali |
+| Shared Folder | Host `/Downloads` -> Kali |
 | Clipboard / Drag-Drop | Bidirectional Enabled |
 
 ---
@@ -90,14 +90,14 @@ Any future VM can be added into the same `10.0.0.0/24` range without touching th
 ## Build Log
 
 <details>
-<summary><b>Step 1 — Hypervisor & Tooling</b></summary>
+<summary><b>Step 1 - Hypervisor & Tooling</b></summary>
 
 Installed 7-Zip for archive extraction and VirtualBox 7.2 as the hypervisor.
 
 </details>
 
 <details>
-<summary><b>Step 2 — Isolated NAT Network</b></summary>
+<summary><b>Step 2 - Isolated NAT Network</b></summary>
 
 Created a dedicated NAT Network instead of default NAT — this allows multiple future VMs to talk to each other *and* reach the internet.
 
@@ -113,7 +113,7 @@ IPv6:        Disabled
 </details>
 
 <details>
-<summary><b>Step 3 — Importing Kali Linux</b></summary>
+<summary><b>Step 3 - Importing Kali Linux</b></summary>
 
 Downloaded Kali Linux 2026.2 (official VirtualBox image) and attached it to `NatNetwork`.
 
@@ -123,7 +123,7 @@ Downloaded Kali Linux 2026.2 (official VirtualBox image) and attached it to `Nat
 </details>
 
 <details>
-<summary><b>Step 4 — Static IP Configuration</b></summary>
+<summary><b>Step 4 - Static IP Configuration</b></summary>
 
 ```bash
 IP Address:  10.0.0.2
@@ -137,7 +137,7 @@ DNS:         8.8.8.8
 </details>
 
 <details>
-<summary><b>Step 5 — Shared Folder & Clipboard</b></summary>
+<summary><b>Step 5 - Shared Folder & Clipboard</b></summary>
 
 Enabled bidirectional clipboard, drag-and-drop, and mapped host `/Downloads` as a permanent shared folder.
 
@@ -146,7 +146,7 @@ Enabled bidirectional clipboard, drag-and-drop, and mapped host `/Downloads` as 
 </details>
 
 <details>
-<summary><b>Step 6 — Baseline Snapshot</b></summary>
+<summary><b>Step 6 - Baseline Snapshot</b></summary>
 
 Took a clean snapshot (`Clean-Kali-NetworkSetup`) as a recovery checkpoint before any future exploitation practice.
 
@@ -169,7 +169,7 @@ Took a clean snapshot (`Clean-Kali-NetworkSetup`) as a recovery checkpoint befor
 
 ---
 
-## Troubleshooting Journal
+## Troubleshooting
 
 **Issue:** Internet dropped after switching to a static IP (common on Kali 2026.x + VirtualBox 7).
 
@@ -186,9 +186,9 @@ sudo nmcli connection up "Ethernet1"
 
 ## Key Takeaways
 
-- **NAT vs. NAT Network** — a NAT Network lets multiple VMs cross-communicate *and* reach the internet, unlike standard per-VM NAT. Essential for multi-machine labs.
+- **NAT vs. NAT Network** - a NAT Network lets multiple VMs cross-communicate *and* reach the internet unlike standard per-VM NAT. Essential for multi-machine labs.
 - Static IP + documented subnet ranges make future target VMs trivial to add.
-- Snapshots aren't optional — they're the "undo button" for a lab you're about to break on purpose.
+- Snapshots aren't optional - they're the "undo button" for a lab you're about to break on purpose.
 
 ---
 
@@ -196,14 +196,14 @@ sudo nmcli connection up "Ethernet1"
 
 | Tool | Purpose |
 |---|---|
-| 7-Zip | Archive extraction |
+| [7-Zip](https://www.7-zip.org/) | Archive extraction |
 | [VirtualBox 7.2](https://virtualbox.org) | Hypervisor / virtualization layer |
 | [Kali Linux 2026.2](https://kali.org/get-kali) | Attacker OS / pentesting distro |
 | nmcli | Network interface management |
 
 ---
 
-## Operator
+## Creator
 
 Built and documented by **Pratyay Chandra**.
 
