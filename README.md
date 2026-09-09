@@ -73,7 +73,7 @@ Any future VM can be added into the same `10.0.0.0/24` range.
 <details>
 <summary><b>Step 1 — Hypervisor & Tooling</b></summary>
 
-Installed 7-Zip (for archive extraction) and VirtualBox 7.2 as the hypervisor.
+Installed 7-Zip for archive extraction and VirtualBox 7.2 as the hypervisor.
 </details>
 
 <details>
@@ -116,7 +116,7 @@ DNS:         8.8.8.8
 <details>
 <summary><b>Step 5 — Shared Folder & Clipboard</b></summary>
 
-Enabled bidirectional clipboard, drag-and-drop, and mapped host `/Downloads` as a permanent shared folder.
+Enabled bidirectional clipboard, drag-and-drop and mapped host `/Downloads` as a permanent shared folder.
 
 ![Shared Folder](docs/screenshots/06-shared-folder.png)
 </details>
@@ -169,7 +169,5 @@ sudo nmcli connection up "Wired connection 1"
 ---
 
 <div align="center">
-
-Built as part of **NetworkWalks Academy — Cybersecurity Internship, Week 1**
 
 </div>
