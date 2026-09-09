@@ -21,7 +21,6 @@
 - [Verification Tests](#-verification-tests)
 - [Troubleshooting Journal](#-troubleshooting-journal)
 - [Key Takeaways](#-key-takeaways)
-- [Roadmap](#-roadmap)
 
 ---
 
