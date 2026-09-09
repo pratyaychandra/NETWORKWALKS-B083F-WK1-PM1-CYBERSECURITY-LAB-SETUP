@@ -118,7 +118,7 @@ IPv6:        Disabled
 Downloaded Kali Linux 2026.2 (official VirtualBox image) and attached it to `NatNetwork`.
 
 ![Kali VM Adapter](docs/screenshots/02-kali-vm-adapter.png)
-![Kali Desktop](docs/screenshots/03-kali-desktop.png)
+![Kali Desktop](docs/screenshots/03-kali-info.png)
 
 </details>
 
