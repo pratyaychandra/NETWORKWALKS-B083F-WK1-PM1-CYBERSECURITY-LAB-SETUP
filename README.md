@@ -1,10 +1,8 @@
-# NETWORKWALKS-B083F-WK1-PM1-CYBERSECURITY-LAB-SETUP
-Self Contained Pentesting Sandbox
 <div align="center">
 
-# 🛡️ Cyber Range: Kali Linux Lab Setup
+# 🛡️ Kali Linux Lab Setup
 
-**A self-contained, isolated pentesting sandbox built from scratch on VirtualBox.**
+**A Self-contained Isolated Pentesting Sandbox Built From Scratch On VirtualBox.**
 
 ![VirtualBox](https://img.shields.io/badge/VirtualBox-v7.2-183A61?style=for-the-badge&logo=virtualbox)
 ![Kali](https://img.shields.io/badge/Kali%20Linux-2026.2-557C94?style=for-the-badge&logo=kalilinux)
@@ -49,7 +47,7 @@ graph TD
     style C fill:#111,stroke:#f00,color:#fff
 ```
 
-This diagram renders live — no static image needed. The lab is designed to scale: any future VM I add just slots into the same `10.0.0.0/24` range.
+Any future VM can be added into the same `10.0.0.0/24` range.
 
 ---
 
