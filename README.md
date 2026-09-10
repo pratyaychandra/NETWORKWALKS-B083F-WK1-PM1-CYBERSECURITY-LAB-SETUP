@@ -42,9 +42,9 @@
 
 This isn't just a "VM installed" screenshot dump, it's a documented build of a **sandboxed environment**: a private network where an attacker machine (Kali) can be safely used to practice reconnaissance, scanning and exploitation techniques without ever touching the outside world unintentionally.
 
-The lab was purpose-built to:
+The lab was built to:
 - Simulate a real attacker-in-isolation setup
-- Stay fully self-contained on a private `10.0.0.0/24` subnet
+- Stay fully self contained on a private `10.0.0.0/24` subnet
 - Leave room to slot in future target machines without reconfiguration
 
 > **Ethics Notice:** This lab is strictly for authorized, personal and educational use. No tools here were used against systems I don't own or have permission to test.
