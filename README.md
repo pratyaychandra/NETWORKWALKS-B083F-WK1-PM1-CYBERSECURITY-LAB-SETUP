@@ -61,6 +61,7 @@ graph TD
     C --> E[Windows 11<br/>10.0.0.11/24]
     C -.future.-> F[Target VM Slot<br/>10.0.0.3 - 99]
     D --> F[Internet via NAT<br/>DNS: 8.8.8.8]
+    E --> F[Internet via NAT<br/>DNS: 8.8.8.8]
 
     style D fill:#557C94,stroke:#333,color:#fff
     style E fill:#557C94,stroke:#333,color:#fff
